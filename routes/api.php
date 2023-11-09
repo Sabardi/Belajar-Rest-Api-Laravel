@@ -2,7 +2,7 @@
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\TempratureController;
 use App\Models\tempratur;
-use Illuminate\Http\Request;`
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
