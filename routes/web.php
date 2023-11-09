@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\PenggunaController;
-
+use App\Http\Controllers\TempratureController;
+use App\Models\tempratur;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,8 @@ route::get('/pengguna/edit{data}', [PenggunaController::class, 'edit'])->name('p
 route::put('/pengguna/update{data}', [PenggunaController::class, 'update'])->name('pengguna.update');
 route::delete('/pengguna/destroy{data}', [PenggunaController::class, 'destroy'])->name('pengguna.destroy');
 route::get('/pengguna/detail{data}', [PenggunaController::class, 'detail'])->name('pengguna.detail');
+
+
+route::get('/index', [TempratureController::class, 'index']);
+route::get('/tempratur/create', [TempratureController::class, 'create']);
+route::post('/tempratur/store', [TempratureController::class, 'store']);

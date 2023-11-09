@@ -22,4 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // route::get('/index', [PenggunaController::class, 'indexApi']);
 // route::get('/pengguna/create', [PenggunaController::class, 'create']);
 route::get('/index', [TempratureController::class, 'index']);
-route::post('/tempratur/creat', [TempratureController::class, 'store']);
+// route::post('/tempratur', [TempratureController::class, 'store']);
+
+route::post('/tempratur/store', [TempratureController::class, 'store']);
