@@ -25,3 +25,5 @@ route::get('/index', [TempratureController::class, 'index']);
 // route::post('/tempratur', [TempratureController::class, 'store']);
 
 route::post('/tempratur/store', [TempratureController::class, 'store']);
+// route::delete('/temprature/destroy{data}', [PenggunaController::class, 'destroy']);
+Route::put('/temperatures/{id}', [TemperatureController::class, 'update']);
